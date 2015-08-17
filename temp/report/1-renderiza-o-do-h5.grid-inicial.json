@@ -1,0 +1,27 @@
+{
+  "testId" : "1-renderiza-o-do-h5.grid-inicial",
+  "name" : "Renderização do h5.grid inicial",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://192.168.25.214:48001/grid_00001/app/index.html 1024x768",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "     check grid_00001/test/grid.spec",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: grid_00001/test/grid.spec included tags: ",
+          "status" : "info",
+          "time" : 1439821303446,
+          "sections" : [ ],
+          "objects" : { },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1439821303169,
+        "type" : "node"
+      } ],
+      "time" : 1439821299039,
+      "type" : "node"
+    } ]
+  }
+}
