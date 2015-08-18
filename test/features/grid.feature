@@ -7,7 +7,7 @@
   Dado que o estado da estória é [estado]
   Quando eu renderizar o [caso]
   Então validar [spec]
-
+  
   Exemplos:
     caso    | estado                                                          | spec
     --------------------------------------------------------------------------------

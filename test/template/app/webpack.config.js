@@ -1,5 +1,5 @@
 module.exports = {
-    entry: __dirname + "/index.js",
+    entry: __dirname + "/grid.view.js",
     output: {
         path: __dirname,
         filename: "bundle.js"
@@ -28,7 +28,7 @@ module.exports = {
         inline: true,
         noInfo: false,
         host: '0.0.0.0',
-        port: 1024,
+        port: 3080,
         colors: true
     },
     plugins: []

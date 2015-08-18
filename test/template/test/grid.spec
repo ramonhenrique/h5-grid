@@ -1,5 +1,5 @@
 ===============================
-input1   css    input[nome="campo1"] 
+input1   css    input[nome="campo"] 
 ===============================
 
 ___spec___
