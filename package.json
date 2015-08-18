@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"  
   },
   "repository": {
     "type": "git",
@@ -26,15 +27,18 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
-    "babel-core": "^5.8.3",
-    "babel-loader": "^5.3.2",
-    "css-loader": "^0.14.4",
     "galenframework-cli": "^1.6.4",
     "h5-test": "latest",
+    "css-loader": "^0.14.4",
     "less": "^2.5.1",
     "less-loader": "^2.2.0",
     "style": "0.0.3",
     "style-loader": "^0.12.3",
-    "webpack": "^1.10.1"
-  }
+    "babel": "^5.8.3",
+    "babel-core": "^5.8.3",
+    "babel-loader": "^5.3.2",
+    "bundle": "^0.2.3",
+    "bundle-loader": "^0.5.4",
+    "flux-easy-loader": "latest"
+}
 }

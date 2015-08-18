@@ -1,7 +1,5 @@
-//var webpack = require('webpack');
-
 module.exports = {
-    entry: __dirname +"/grid.view.js",
+    entry: __dirname + "/index.js",
     output: {
         path: __dirname,
         filename: "bundle.js"
@@ -13,8 +11,8 @@ module.exports = {
                 loader: "style!css!less"
             },
             {
-                test: /\.js$/,
-                loaders: ['babel'], // 'jsx?harmony&stripTypes', 'flowcheck'],
+                test: /\.jsx?$/,
+                loaders: ['babel'], 
                 exclude: /node_modules/
             },
             {
@@ -30,7 +28,7 @@ module.exports = {
         inline: true,
         noInfo: false,
         host: '0.0.0.0',
-        port: 3080,
+        port: 1024,
         colors: true
     },
     plugins: []

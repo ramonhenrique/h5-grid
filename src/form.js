@@ -1,5 +1,5 @@
 var React = require('react');
-require('h5-input/src/input.less');
+require('./form.less');
 var h5mixinprops = require('./mixins/h5mixinprops')
 
 var hform = React.createClass({
