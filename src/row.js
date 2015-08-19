@@ -5,7 +5,9 @@ var HRow = React.createClass({
         children: React.PropTypes.array.isRequired
     },
     render: function () {
-        return (React.createElement('tr', {}, this.props.children));
+        var rowProps ={};
+        rowProps.className = this.props.className;
+        return (React.createElement('tr', rowProps, this.props.children));
     }
 });
 

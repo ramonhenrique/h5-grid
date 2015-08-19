@@ -4,7 +4,7 @@ var h5mixinprops = require('./mixins/h5mixinprops')
 
 var hform = React.createClass({
     propTypes: {
-        labelText: React.PropTypes.string.isRequired,
+        labelText: React.PropTypes.string.isRequired
     },
     mixins: [h5mixinprops],
     render: function () {
@@ -23,9 +23,14 @@ var hform = React.createClass({
             padding: "10px"
         };
 
-        return (
+        var tableProps = {};
+        tableProps.width= "100%";
+        tableProps.cellSpacing="10px";
+        tableProps.cellPadding= "0";
+        tableProps.className=propsTraduzidas.className;
 
-            React.createElement('table', {width: "100%", cellSpacing:"10px", cellPadding: 0}, [this.props.children])
+        return (
+            React.createElement('table', tableProps, [this.props.children])
         )
     }
 
