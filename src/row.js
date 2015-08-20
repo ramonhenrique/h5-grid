@@ -5,9 +5,16 @@ var HRow = React.createClass({
         children: React.PropTypes.array.isRequired
     },
     render: function () {
-        var rowProps ={};
-        rowProps.className = this.props.className;
-        return (React.createElement('tr', rowProps, this.props.children));
+        return (React.createElement('tr', {}, [this.createTD()]));
+    },
+    createTD: function(){
+        return this.props.children.map(function(c){
+            var rowspan = c.props.rowSpan
+            var colspan = c.props.colSpan
+            delete c.props.rowSpan
+            delete c.props.colSpan
+            return React.createElement('td', {rowSpan:rowspan, colSpan:colspan}, [c]);
+        });
     }
 });
 

@@ -1,13 +1,19 @@
 ==================================
 container   css   #app
-form        css   .form-container
-row-1       css   .row-1
-row-2       css   .row-2
-row-3       css   .row-3
-row-4       css   .row-4
-row-5       css   .row-5
-row-6       css   .row-6
-row-7       css   .row-7
+form        css   table[data-reactid=".0"]
+row-1       css   tr[data-reactid=".0.0:0"]
+row-2       css   tr[data-reactid=".0.0:1"]
+row-3       css   tr[data-reactid=".0.0:2"]
+row-4       css   tr[data-reactid=".0.0:3"]
+row-5       css   tr[data-reactid=".0.0:4"]
+row-6       css   tr[data-reactid=".0.0:5"]
+row-7       css   tr[data-reactid=".0.0:6"]
+row-8       css   tr[data-reactid=".0.0:7"]
+row-9       css   tr[data-reactid=".0.0:8"]
+row-10      css   tr[data-reactid=".0.0:9"]
+row-11      css   tr[data-reactid=".0.0:a"]
+row-12      css   tr[data-reactid=".0.0:b"]
+c0          css   .campo0
 c1          css   .campo1
 c2          css   .campo2
 c3          css   .campo3
@@ -39,8 +45,7 @@ c28         css   .campo28
 c29         css   .campo29
 c30         css   .campo30
 c31         css   .campo31
-c32         css   .campo33
-c33         css   .campo33
+c32         css   .campo32
 ==================================
 
 ___spec___

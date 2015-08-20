@@ -1,5 +1,5 @@
 module.exports = {
-    entry: __dirname + "/grid.view.js",
+    entry: __dirname + "/layout.view.js",
     output: {
         path: __dirname,
         filename: "bundle.js"
