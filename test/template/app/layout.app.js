@@ -10,24 +10,21 @@ window.hsession = {
 var H5Layout = React.createClass({
     render: function () {
         return(
-            React.createElement(HForm, {labelText : {pt_br: "app"}}, [
-                React.createElement(HRow,{},[
-                    React.createElement("header", {
-                        className: 'app-title',
-                        rowSpan: 1,
-                        colSpan: 1
-                    }, 'title')
+            React.createElement("table", {className:"app", cellSpacing:"0px", cellPadding: "0px"},[
+                React.createElement("tr",{height:"5%"},[
+                    React.createElement("td",{colSpan:2, className:"app-title"},[
+                        React.createElement("div", {},'title')
+                    ])
                 ]),
-                React.createElement(HRow,{},[
-                    React.createElement("div", {
-                        className: 'app-menu',
-                        colSpan: 1
-                    }, 'menu'),
-                    React.createElement("div", {
-                        className: 'app-content',
-                        rowSpan: 1,
-                        colSpan: 2
-                    }, [
+                React.createElement("tr", {height:"95%"},[
+                    React.createElement("td", {rowSpan:2, className:"app-menu"},[
+                        React.createElement("div", {className: 'menu-content'}, 'menu')
+                    ]),
+                    React.createElement("td",{},[
+                        React.createElement("div", {
+                            className: 'app-content',
+                            colSpan: 1
+                        },[
                         React.createElement(HForm, {labelText : {pt_br: "content"}}, [
                             React.createElement(HRow,{},[
                                 React.createElement("div", {
@@ -224,10 +221,14 @@ var H5Layout = React.createClass({
                                     className: 'campo32',
                                     rowSpan: 1,
                                     colSpan: 7
-                                }, 'div33')
+                                }, 'div34')
                             ])
                         ])
                     ])
+                    ])
+                ]),
+                React.createElement("tr",{},[
+                    React.createElement("td",{className:"actionBar"},"actionBar")
                 ])
             ])
         )

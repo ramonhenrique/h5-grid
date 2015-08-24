@@ -22,13 +22,11 @@ var hform = React.createClass({
         var styleForm = {
             padding: "10px"
         };
-
         var tableProps = {};
         tableProps.width= "100%";
         tableProps.cellSpacing="10px";
         tableProps.cellPadding= "0";
         tableProps.className=propsTraduzidas.className;
-
         return (
             React.createElement('table', tableProps, [this.props.children])
         )
