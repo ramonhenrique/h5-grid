@@ -11,7 +11,7 @@ var h5MixinProps = {
         for (var prop in propriedades) {
             if (/.+Text$/.test(prop)) {
                 if (typeof propriedades[prop] === "object")
-                    props_button[prop] = propriedades[prop][window.hsession.language];
+                    props_button[prop] = propriedades[prop][window.appstore.getState().session.language];
                 else
                     props_button[prop] = propriedades[prop];
             } else

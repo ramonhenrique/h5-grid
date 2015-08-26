@@ -11,7 +11,7 @@ var HRow = React.createClass({
     },
     createTD: function(){
         return this.props.children.map(function(c){
-            var tdProps={}
+            var tdProps={};
             tdProps.rowSpan = c.props.rowSpan;
             tdProps.colSpan = c.props.colSpan;
             delete c.props.rowSpan;
